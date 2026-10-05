@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Threads Views Crawler</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #fff; --text: #1b1f24; --muted: #5f6b7a; --line: #dfe3e8;
+    --accent: #1d4ed8; --accent-text: #fff; --ok: #15803d; --warn: #b45309; --err: #b91c1c; --skip: #8a94a3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111418; --card: #1a1e24; --text: #e6e9ee; --muted: #9aa5b4; --line: #2c323b;
+      --accent: #3b82f6; --accent-text: #fff; --ok: #4ade80; --warn: #fbbf24; --err: #f87171; --skip: #6b7684;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 20px; margin: 0 0 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+  .card h2 { font-size: 14px; margin: 0 0 12px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+  .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+  label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--muted); }
+  input[type=text], input[type=date], input[type=url], select {
+    font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line);
+    border-radius: 6px; padding: 7px 10px; min-width: 0;
+  }
+  input[type=url] { width: min(480px, 100%); }
+  button {
+    font: inherit; border: 1px solid var(--line); background: var(--card); color: var(--text);
+    border-radius: 6px; padding: 7px 14px; cursor: pointer;
+  }
+  button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: 600; }
+  button:disabled { opacity: .5; cursor: not-allowed; }
+  .or { color: var(--muted); align-self: center; }
+  #message { min-height: 20px; margin: 8px 0 0; }
+  #message.error { color: var(--err); }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 600; position: sticky; top: 0; background: var(--card); }
+  td.progress { font-weight: 600; }
+  .s-done { color: var(--ok); } .s-warning { color: var(--warn); } .s-error { color: var(--err); }
+  .s-skipped { color: var(--skip); } .s-running { color: var(--accent); }
+  tr.dim td:not(.progress) { color: var(--skip); }
+  #summary { color: var(--muted); margin: 0 0 8px; }
+  #log { background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px;
+         height: 180px; overflow: auto; font: 12px/1.5 ui-monospace, Consolas, monospace; white-space: pre-wrap; margin: 0; }
+  .actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  #download { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Threads Views Crawler</h1>
+
+  <section class="card">
+    <h2>1. Nhập danh sách acc</h2>
+    <div class="row">
+      <label>File Excel / CSV
+        <input type="file" id="file" accept=".xlsx,.xls,.csv">
+      </label>
+      <span class="or">hoặc</span>
+      <label>Link Google Sheet (chia sẻ: ai có link đều xem được)
+        <input type="url" id="gsheet" placeholder="https://docs.google.com/spreadsheets/d/...">
+      </label>
+      <button id="loadSheet">Tải sheet</button>
+    </div>
+    <p id="message"></p>
+  </section>
+
+  <section class="card">
+    <h2>2. Cài đặt</h2>
+    <div class="row">
+      <label>Browser
+        <select id="browserMethod">
+          <option value="adspower">AdsPower profile</option>
+          <option value="chrome">Chrome on this PC</option>
+        </select>
+      </label>
+      <label id="adspowerWrap">AdsPower profile ID
+        <input type="text" id="adspower" placeholder="k19y5vo6" autocomplete="off">
+      </label>
+      <label>Từ ngày
+        <input type="date" id="dateFrom" required>
+      </label>
+      <label>Đến ngày (tính cả ngày này)
+        <input type="date" id="dateTo" required>
+      </label>
+      <div class="actions">
+        <button class="primary" id="start" disabled>Bắt đầu cào</button>
+        <button type="button" id="alreadySigned">Already signed</button>
+        <a id="download" href="/api/result"><button type="button">Tải JSON tổng</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>3. Danh sách</h2>
+    <p id="summary">Chưa có dữ liệu.</p>
+    <div class="table-wrap"><table id="table"></table></div>
+  </section>
+
+  <section class="card">
+    <h2>Nhật ký</h2>
+    <pre id="log"></pre>
+  </section>
+</main>
+<script src="/xlsx.full.min.js"></script>
+<script src="/ui.js"></script>
+</body>
+</html>
