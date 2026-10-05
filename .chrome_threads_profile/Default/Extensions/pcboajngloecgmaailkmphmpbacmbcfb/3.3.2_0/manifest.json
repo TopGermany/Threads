@@ -1,0 +1,29 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "assets/images/icon16_disabled.png",
+         "32": "assets/images/icon32_disabled.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "__MSG_defTitle__"
+   },
+   "background": {
+      "service_worker": "assets/js/sw.js",
+      "type": "module"
+   },
+   "default_locale": "en",
+   "description": "__MSG_extDescr__",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "assets/images/icon128_enabled.png",
+      "16": "assets/images/icon16_enabled.png",
+      "32": "assets/images/icon32_enabled.png",
+      "48": "assets/images/icon48_enabled.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnK/3ugv8AOAE0Ut1oZQ75ItMUjBjgxxTnCb/P45kCORs+b5pjTmhYvV7l/F9JalRxUSFS5VMpSs7uSjDoTJ4o9h2L85wuMB/l63bdTh5t62L7r/hQoyLHN3Q/soXVWVlKTfr61LTPiaEW+V3+0PypJRdnWsNJS9NIlwL5d+63TOGrvyf+zLxrnz5Aben0lOW/5LZfJmRUNqHMW37RB+8+bK7qnQEs6j3SnxM0YbQ4WtQEZjWWfgVU7DK8D9wPYVsUb9GNZux51EbgTxM5JU2VghtQJX1JfApK3zQ418DScberu3yGOvSx4AomCXRxJzZvnVHnlKmSi/A41RLt8xP2wIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_extName__",
+   "permissions": [ "proxy", "browsingData", "storage", "webRequest", "webRequestAuthProvider" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.3.2"
+}

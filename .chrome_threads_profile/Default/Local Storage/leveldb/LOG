@@ -1,0 +1,45 @@
+2026/10/02-14:39:40.834 4914 Reusing MANIFEST D:\EOS Marketing\Threads_crawls\.chrome_threads_profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/10/02-14:39:40.835 4914 Recovering log #59
+2026/10/02-14:39:40.837 4914 Reusing old log D:\EOS Marketing\Threads_crawls\.chrome_threads_profile\Default\Local Storage\leveldb/000059.log 
+2026/10/02-14:53:25.938 2080 Level-0 table #63: started
+2026/10/02-14:53:25.942 2080 Level-0 table #63: 28375 bytes OK
+2026/10/02-14:53:25.949 2080 Delete type=0 #59
+2026/10/02-14:53:25.951 4914 Compacting 4@0 + 1@1 files
+2026/10/02-14:53:25.965 4914 Generated table #64@0: 8208 keys, 545329 bytes
+2026/10/02-14:53:25.965 4914 Compacted 4@0 + 1@1 files => 545329 bytes
+2026/10/02-14:53:25.966 4914 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/10/02-14:53:25.967 4914 Delete type=2 #54
+2026/10/02-14:53:25.967 4914 Delete type=2 #56
+2026/10/02-14:53:25.967 4914 Delete type=2 #58
+2026/10/02-14:53:25.967 4914 Delete type=2 #60
+2026/10/02-14:53:25.967 4914 Delete type=2 #63
+2026/10/02-14:56:25.940 2080 Level-0 table #66: started
+2026/10/02-14:56:25.944 2080 Level-0 table #66: 31001 bytes OK
+2026/10/02-14:56:25.948 2080 Delete type=0 #62
+2026/10/02-15:00:25.936 2080 Level-0 table #68: started
+2026/10/02-15:00:25.944 2080 Level-0 table #68: 29687 bytes OK
+2026/10/02-15:00:25.947 2080 Delete type=0 #65
+2026/10/02-15:05:25.942 2080 Level-0 table #70: started
+2026/10/02-15:05:25.945 2080 Level-0 table #70: 24588 bytes OK
+2026/10/02-15:05:25.947 2080 Delete type=0 #67
+2026/10/02-15:09:25.935 2080 Level-0 table #72: started
+2026/10/02-15:09:25.937 2080 Level-0 table #72: 24208 bytes OK
+2026/10/02-15:09:25.939 2080 Delete type=0 #69
+2026/10/02-15:09:25.939 2080 Compacting 4@0 + 1@1 files
+2026/10/02-15:09:25.947 2080 Generated table #73@0: 9676 keys, 637470 bytes
+2026/10/02-15:09:25.947 2080 Compacted 4@0 + 1@1 files => 637470 bytes
+2026/10/02-15:09:25.949 2080 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/10/02-15:09:25.949 2080 Delete type=2 #64
+2026/10/02-15:09:25.949 2080 Delete type=2 #66
+2026/10/02-15:09:25.949 2080 Delete type=2 #68
+2026/10/02-15:09:25.949 2080 Delete type=2 #70
+2026/10/02-15:09:25.949 2080 Delete type=2 #72
+2026/10/02-15:12:25.938 2080 Level-0 table #75: started
+2026/10/02-15:12:25.941 2080 Level-0 table #75: 29242 bytes OK
+2026/10/02-15:12:25.943 2080 Delete type=0 #71
+2026/10/02-15:16:25.938 2080 Level-0 table #77: started
+2026/10/02-15:16:25.945 2080 Level-0 table #77: 23425 bytes OK
+2026/10/02-15:16:25.948 2080 Delete type=0 #74
+2026/10/02-15:47:08.133 2080 Level-0 table #79: started
+2026/10/02-15:47:08.139 2080 Level-0 table #79: 28863 bytes OK
+2026/10/02-15:47:08.141 2080 Delete type=0 #76

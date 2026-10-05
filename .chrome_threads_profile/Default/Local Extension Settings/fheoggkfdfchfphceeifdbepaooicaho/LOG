@@ -1,0 +1,41 @@
+2026/10/02-14:39:41.116 5028 Reusing MANIFEST D:\EOS Marketing\Threads_crawls\.chrome_threads_profile\Default\Local Extension Settings\fheoggkfdfchfphceeifdbepaooicaho/MANIFEST-000001
+2026/10/02-14:39:41.117 5028 Recovering log #79
+2026/10/02-14:39:41.125 5028 Reusing old log D:\EOS Marketing\Threads_crawls\.chrome_threads_profile\Default\Local Extension Settings\fheoggkfdfchfphceeifdbepaooicaho/000079.log 
+2026/10/02-14:51:47.252 5a38 Level-0 table #83: started
+2026/10/02-14:51:47.260 5a38 Level-0 table #83: 730862 bytes OK
+2026/10/02-14:51:47.263 5a38 Delete type=0 #79
+2026/10/02-14:53:48.240 5028 Compacting 3@0 + 1@1 files
+2026/10/02-14:53:48.248 5028 Generated table #84@0: 6 keys, 44339 bytes
+2026/10/02-14:53:48.248 5028 Compacted 3@0 + 1@1 files => 44339 bytes
+2026/10/02-14:53:48.250 5028 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/10/02-14:53:48.250 5028 Delete type=2 #76
+2026/10/02-14:53:48.250 5028 Delete type=2 #78
+2026/10/02-14:53:48.250 5028 Delete type=2 #80
+2026/10/02-14:53:48.250 5028 Delete type=2 #83
+2026/10/02-14:57:40.992 5a38 Compacting 1@1 + 1@2 files
+2026/10/02-14:57:41.000 5a38 Generated table #85@1: 35 keys, 422963 bytes
+2026/10/02-14:57:41.000 5a38 Compacted 1@1 + 1@2 files => 422963 bytes
+2026/10/02-14:57:41.001 5a38 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/10/02-14:57:41.001 5a38 Delete type=2 #11
+2026/10/02-14:57:41.001 5a38 Delete type=2 #84
+2026/10/02-15:09:26.860 5a38 Level-0 table #87: started
+2026/10/02-15:09:26.866 5a38 Level-0 table #87: 712488 bytes OK
+2026/10/02-15:09:26.868 5a38 Delete type=0 #82
+2026/10/02-15:14:38.675 5028 Compacting 1@1 + 1@2 files
+2026/10/02-15:14:38.685 5028 Generated table #88@1: 35 keys, 423648 bytes
+2026/10/02-15:14:38.686 5028 Compacted 1@1 + 1@2 files => 423648 bytes
+2026/10/02-15:14:38.687 5028 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/10/02-15:14:38.687 5028 Delete type=2 #85
+2026/10/02-15:14:38.687 5028 Delete type=2 #87
+2026/10/02-15:15:08.068 5a38 Level-0 table #90: started
+2026/10/02-15:15:08.077 5a38 Level-0 table #90: 720075 bytes OK
+2026/10/02-15:15:08.079 5a38 Delete type=0 #86
+2026/10/02-15:15:53.717 5a38 Level-0 table #92: started
+2026/10/02-15:15:53.724 5a38 Level-0 table #92: 729496 bytes OK
+2026/10/02-15:15:53.726 5a38 Delete type=0 #89
+2026/10/02-15:16:36.128 5a38 Level-0 table #94: started
+2026/10/02-15:16:36.139 5a38 Level-0 table #94: 692904 bytes OK
+2026/10/02-15:16:36.142 5a38 Delete type=0 #91
+2026/10/02-15:17:50.826 5a38 Level-0 table #96: started
+2026/10/02-15:17:50.833 5a38 Level-0 table #96: 701704 bytes OK
+2026/10/02-15:17:50.835 5a38 Delete type=0 #93

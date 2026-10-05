@@ -1,0 +1,107 @@
+2026/10/02-10:31:52.358 47dc Reusing MANIFEST D:\EOS Marketing\Threads_crawls\.chrome_threads_profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/10/02-10:31:52.359 47dc Recovering log #13
+2026/10/02-10:31:52.360 47dc Reusing old log D:\EOS Marketing\Threads_crawls\.chrome_threads_profile\Default\Local Storage\leveldb/000013.log 
+2026/10/02-10:46:06.548 620c Level-0 table #17: started
+2026/10/02-10:46:06.550 620c Level-0 table #17: 34804 bytes OK
+2026/10/02-10:46:06.551 620c Delete type=0 #13
+2026/10/02-10:46:06.552 47dc Compacting 4@0 + 0@1 files
+2026/10/02-10:46:06.555 47dc Generated table #18@0: 719 keys, 57327 bytes
+2026/10/02-10:46:06.555 47dc Compacted 4@0 + 0@1 files => 57327 bytes
+2026/10/02-10:46:06.556 47dc compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/10/02-10:46:06.556 47dc Delete type=2 #7
+2026/10/02-10:46:06.556 47dc Delete type=2 #10
+2026/10/02-10:46:06.556 47dc Delete type=2 #14
+2026/10/02-10:46:06.556 47dc Delete type=2 #17
+2026/10/02-10:49:06.548 620c Level-0 table #20: started
+2026/10/02-10:49:06.552 620c Level-0 table #20: 28608 bytes OK
+2026/10/02-10:49:06.554 620c Delete type=0 #16
+2026/10/02-10:52:06.554 620c Level-0 table #22: started
+2026/10/02-10:52:06.557 620c Level-0 table #22: 34000 bytes OK
+2026/10/02-10:52:06.558 620c Delete type=0 #19
+2026/10/02-10:57:06.552 620c Level-0 table #24: started
+2026/10/02-10:57:06.557 620c Level-0 table #24: 29194 bytes OK
+2026/10/02-10:57:06.559 620c Delete type=0 #21
+2026/10/02-11:01:06.552 620c Level-0 table #26: started
+2026/10/02-11:01:06.557 620c Level-0 table #26: 26734 bytes OK
+2026/10/02-11:01:06.558 620c Delete type=0 #23
+2026/10/02-11:01:06.559 620c Compacting 4@0 + 1@1 files
+2026/10/02-11:01:06.562 620c Generated table #27@0: 2331 keys, 163163 bytes
+2026/10/02-11:01:06.562 620c Compacted 4@0 + 1@1 files => 163163 bytes
+2026/10/02-11:01:06.563 620c compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/10/02-11:01:06.563 620c Delete type=2 #18
+2026/10/02-11:01:06.563 620c Delete type=2 #20
+2026/10/02-11:01:06.563 620c Delete type=2 #22
+2026/10/02-11:01:06.563 620c Delete type=2 #24
+2026/10/02-11:01:06.563 620c Delete type=2 #26
+2026/10/02-11:05:06.559 620c Level-0 table #29: started
+2026/10/02-11:05:06.564 620c Level-0 table #29: 32262 bytes OK
+2026/10/02-11:05:06.567 620c Delete type=0 #25
+2026/10/02-11:08:06.553 620c Level-0 table #31: started
+2026/10/02-11:08:06.556 620c Level-0 table #31: 32657 bytes OK
+2026/10/02-11:08:06.558 620c Delete type=0 #28
+2026/10/02-11:11:06.563 620c Level-0 table #33: started
+2026/10/02-11:11:06.568 620c Level-0 table #33: 30090 bytes OK
+2026/10/02-11:11:06.570 620c Delete type=0 #30
+2026/10/02-11:14:06.561 620c Level-0 table #35: started
+2026/10/02-11:14:06.568 620c Level-0 table #35: 22410 bytes OK
+2026/10/02-11:14:06.571 620c Delete type=0 #32
+2026/10/02-11:14:06.572 620c Compacting 4@0 + 1@1 files
+2026/10/02-11:14:06.583 620c Generated table #36@0: 3916 keys, 263721 bytes
+2026/10/02-11:14:06.583 620c Compacted 4@0 + 1@1 files => 263721 bytes
+2026/10/02-11:14:06.584 620c compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/10/02-11:14:06.585 620c Delete type=2 #27
+2026/10/02-11:14:06.585 620c Delete type=2 #29
+2026/10/02-11:14:06.585 620c Delete type=2 #31
+2026/10/02-11:14:06.585 620c Delete type=2 #33
+2026/10/02-11:14:06.585 620c Delete type=2 #35
+2026/10/02-11:19:06.554 620c Level-0 table #38: started
+2026/10/02-11:19:06.559 620c Level-0 table #38: 21836 bytes OK
+2026/10/02-11:19:06.561 620c Delete type=0 #34
+2026/10/02-11:21:06.558 620c Level-0 table #40: started
+2026/10/02-11:21:06.560 620c Level-0 table #40: 25182 bytes OK
+2026/10/02-11:21:06.562 620c Delete type=0 #37
+2026/10/02-11:28:06.548 620c Level-0 table #42: started
+2026/10/02-11:28:06.552 620c Level-0 table #42: 28924 bytes OK
+2026/10/02-11:28:06.554 620c Delete type=0 #39
+2026/10/02-11:31:06.554 620c Level-0 table #44: started
+2026/10/02-11:31:06.558 620c Level-0 table #44: 33650 bytes OK
+2026/10/02-11:31:06.559 620c Delete type=0 #41
+2026/10/02-11:31:06.560 620c Compacting 4@0 + 1@1 files
+2026/10/02-11:31:06.567 620c Generated table #45@0: 5442 keys, 361329 bytes
+2026/10/02-11:31:06.567 620c Compacted 4@0 + 1@1 files => 361329 bytes
+2026/10/02-11:31:06.568 620c compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/10/02-11:31:06.569 620c Delete type=2 #36
+2026/10/02-11:31:06.569 620c Delete type=2 #38
+2026/10/02-11:31:06.569 620c Delete type=2 #40
+2026/10/02-11:31:06.569 620c Delete type=2 #42
+2026/10/02-11:31:06.569 620c Delete type=2 #44
+2026/10/02-11:34:06.553 620c Level-0 table #47: started
+2026/10/02-11:34:06.558 620c Level-0 table #47: 23437 bytes OK
+2026/10/02-11:34:06.561 620c Delete type=0 #43
+2026/10/02-11:37:06.556 620c Level-0 table #49: started
+2026/10/02-11:37:06.560 620c Level-0 table #49: 28082 bytes OK
+2026/10/02-11:37:06.561 620c Delete type=0 #46
+2026/10/02-11:40:06.562 620c Level-0 table #51: started
+2026/10/02-11:40:06.566 620c Level-0 table #51: 24695 bytes OK
+2026/10/02-11:40:06.568 620c Delete type=0 #48
+2026/10/02-11:44:06.548 620c Level-0 table #53: started
+2026/10/02-11:44:06.551 620c Level-0 table #53: 27239 bytes OK
+2026/10/02-11:44:06.553 620c Delete type=0 #50
+2026/10/02-11:44:06.553 620c Compacting 4@0 + 1@1 files
+2026/10/02-11:44:06.565 620c Generated table #54@0: 6913 keys, 457799 bytes
+2026/10/02-11:44:06.565 620c Compacted 4@0 + 1@1 files => 457799 bytes
+2026/10/02-11:44:06.566 620c compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/10/02-11:44:06.567 620c Delete type=2 #45
+2026/10/02-11:44:06.567 620c Delete type=2 #47
+2026/10/02-11:44:06.567 620c Delete type=2 #49
+2026/10/02-11:44:06.567 620c Delete type=2 #51
+2026/10/02-11:44:06.567 620c Delete type=2 #53
+2026/10/02-11:48:06.554 620c Level-0 table #56: started
+2026/10/02-11:48:06.558 620c Level-0 table #56: 22939 bytes OK
+2026/10/02-11:48:06.560 620c Delete type=0 #52
+2026/10/02-11:50:06.563 620c Level-0 table #58: started
+2026/10/02-11:50:06.569 620c Level-0 table #58: 31991 bytes OK
+2026/10/02-11:50:06.571 620c Delete type=0 #55
+2026/10/02-11:53:06.551 620c Level-0 table #60: started
+2026/10/02-11:53:06.556 620c Level-0 table #60: 29805 bytes OK
+2026/10/02-11:53:06.558 620c Delete type=0 #57

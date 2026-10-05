@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threads Views Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+        }
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            padding: 2rem; 
+            background-color: var(--bg-color); 
+            color: var(--text-color);
+            margin: 0;
+            min-height: 100vh;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .chart-container { 
+            width: 100%; 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            background: var(--card-bg); 
+            padding: 2rem; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3); 
+            border: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Threads Page Views Comparison</h1>
+        <p>Daily median views comparison across multiple pages</p>
+    </div>
+    <div class="chart-container">
+        <canvas id="viewsChart"></canvas>
+    </div>
+    <script>
+        const ctx = document.getElementById('viewsChart').getContext('2d');
+        const data = {"labels": ["2026-09-15", "2026-09-16", "2026-09-17", "2026-09-18", "2026-09-19", "2026-09-20", "2026-09-21", "2026-09-22", "2026-09-23", "2026-09-24", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02"], "datasets": [{"label": "@homebywu", "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, 3200.0, 481, 582, 447, 184], "borderColor": "#e6194b", "backgroundColor": "#e6194b", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@liudmyla1960", "data": [null, null, null, null, null, null, null, null, null, null, 15850.0, 49200.0, 10300.0, 15600, 7400, 121950.0, 4550.0, 880.5], "borderColor": "#3cb44b", "backgroundColor": "#3cb44b", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@alligator._.5finds", "data": [null, null, null, null, null, null, null, null, null, null, null, null, 1600.0, 1250.0, 147, 212, 66.0, null], "borderColor": "#ffe119", "backgroundColor": "#ffe119", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@jeffrez_", "data": [null, null, 357.5, null, null, null, null, 217, null, 268, null, null, 936, 2950.0, 2600, 14300, 1750.0, null], "borderColor": "#4363d8", "backgroundColor": "#4363d8", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@minasbeautynotes", "data": [null, null, null, null, null, null, null, null, 7850.0, 20600, 1350.0, 46800, 74000.0, 13900.0, 9300, 2600, 5200.0, 0], "borderColor": "#f58231", "backgroundColor": "#f58231", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@william.finds", "data": [135000, 17450.0, 1200, 1300, 2400, 4700.0, 2000, 706, 946.0, 1227.0, 1300.0, 637.5, 1000, 408, 1700, 1130.0, 337.5, 102.0], "borderColor": "#911eb4", "backgroundColor": "#911eb4", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@reagens23", "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 4800, 3300], "borderColor": "#46f0f0", "backgroundColor": "#46f0f0", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@herhealthylifestyle_", "data": [null, null, null, null, null, null, null, 917, 361.5, 317.5, 111.0, 453, 517.0, 858, 2962.5, 1750.0, 990, 243], "borderColor": "#f032e6", "backgroundColor": "#f032e6", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@redcherry5300", "data": [1650.0, 1923.5, 11400, 4800, 2800.0, 4000.0, 7500, 4700, 26500, 5000, 6100, 19700, 10150.0, 4800.0, 609.0, 686.5, 125.5, null], "borderColor": "#bcf60c", "backgroundColor": "#bcf60c", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@the_dailyshine", "data": [null, 763, 2700, 1532.0, 494.5, 974, 1200.0, 980, 324, 1000, 448.5, 1252.0, 1800.0, 613, 432, 86.5, 193, 162.5], "borderColor": "#fabebe", "backgroundColor": "#fabebe", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@fernandes_des69", "data": [null, null, null, null, null, null, null, null, null, null, 116.5, 165, 8600.0, 193, 70, 75, 28.5, null], "borderColor": "#008080", "backgroundColor": "#008080", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@darimi920", "data": [null, 3100, 1400, 3700, 1600, null, 2000, 0, null, 1200, null, null, 1500.0, 1268.5, null, 132000, 18200, null], "borderColor": "#e6beff", "backgroundColor": "#e6beff", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@llama.53121255", "data": [null, 677, 134.5, null, 19450.0, 764, null, 95500.0, 192700.0, 165116.5, 5200, 631, 8153.5, 25678.0, 25.5, 40, 287, null], "borderColor": "#9a6324", "backgroundColor": "#9a6324", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@fypfindss", "data": [3000, 2000, 1010.0, 3200, 802.0, 1100, 1900, 1000.0, 720.5, 676.5, 8, 48.5, 960.0, 77, 162, 150, 147.5, null], "borderColor": "#fffac8", "backgroundColor": "#fffac8", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}, {"label": "@lauren.h_09", "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, 16150.0, 10100.0, 2550.0, 2000, 13400], "borderColor": "#800000", "backgroundColor": "#800000", "fill": false, "tension": 0.3, "spanGaps": true, "pointRadius": 4, "pointHoverRadius": 6}]};
+        
+        // Chart.js default font color
+        Chart.defaults.color = '#94a3b8';
+        Chart.defaults.font.family = "'Inter', sans-serif";
+        
+        new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                interaction: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 20,
+                            usePointStyle: true,
+                            pointStyle: 'circle'
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                        titleColor: '#f8fafc',
+                        bodyColor: '#cbd5e1',
+                        borderColor: '#334155',
+                        borderWidth: 1,
+                        padding: 12,
+                        boxPadding: 6
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: '#334155',
+                            drawBorder: false,
+                        },
+                        ticks: {
+                            maxTicksLimit: 30,
+                            padding: 10
+                        },
+                        title: { 
+                            display: true, 
+                            text: 'Median Views',
+                            color: '#94a3b8'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: '#334155',
+                            drawBorder: false,
+                        },
+                        title: { 
+                            display: true, 
+                            text: 'Date',
+                            color: '#94a3b8'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
